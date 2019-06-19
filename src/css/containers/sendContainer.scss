@@ -10,25 +10,25 @@
     .send_area {
         .send_label {
             font-size: 18px;
-            color: @gray;
+            color: $gray;
             margin-top: 30px;
         }
 
         .send_balance_label {
             font-size: 18px;
-            color: @text-color;
+            color: $text-color;
             margin-top: 5px;
         }
 
         .ant-input-group-addon {
-            background: @white !important;
-            color: @gray !important;
+            background: $white !important;
+            color: $gray !important;
         }
 
         input {
             height: 50px;
             border-left: none;
-            color: @text-color;
+            color: $text-color;
         }
 
         .send_to, .send_amount {
@@ -46,14 +46,14 @@
             padding: 0 15px;
 
             .send_fee {
-                color: @gray;
+                color: $gray;
             }
 
             .send_fee_amout {
                 text-align: right;
-                
+
                 span {
-                    color: @btn-bg-color;
+                    color: $btn-bg-color;
                 }
             }
         }
@@ -66,8 +66,8 @@
                 height: 50px;
                 border-radius: 30px;
                 border: none;
-                background-color: @btn-bg-color;
-                color: @white;
+                background-color: $btn-bg-color;
+                color: $white;
                 font-weight: bold;
                 font-size: 18px;
             }

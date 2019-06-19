@@ -1,10 +1,8 @@
-@import './shared.less';
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: @white;
+  background-color: $white;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -17,10 +15,6 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   height: 100%;
   width: 100%;
-  
-  .logo {
-    width: 125px;
-  }
 
   .content {
     display: table-cell;
@@ -32,11 +26,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 72px;
 
     .ant-layout {
-      background-color: @white;
+      background-color: $white;
     }
 
     .ant-layout-header {
-      background-color: @white;
+      background-color: $white;
     }
 
     .center {
@@ -44,16 +38,16 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .invalid_msg {
-      color: @red;
+      color: $red;
     }
 
     .success_msg {
-      color: @btn-bg-color;
+      color: $btn-bg-color;
     }
 
     .selected {
-      background-color: @btn-bg-color !important;
-      color: @white !important;
+      background-color: $btn-bg-color !important;
+      color: $white !important;
       border: none !important;
     }
   }

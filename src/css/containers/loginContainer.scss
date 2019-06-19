@@ -1,5 +1,3 @@
-@import '../shared.less';
-
 .block {
   width: 550px;
   height: 600px;
@@ -21,7 +19,7 @@
       span {
         font-size: 18px;
         font-weight: 600;
-        color: @text-color;
+        color: $text-color;
       }
     }
 
@@ -30,12 +28,12 @@
       height: 50px;
       border-radius: 30px;
       margin-top: 15px;
-      background-color: @btn-bg-color;
-      border-color: @btn-bg-color;
-      
+      background-color: $btn-bg-color;
+      border-color: $btn-bg-color;
+
       span {
         font-size: 18px;
-        color: @white;
+        color: $white;
       }
     }
   }
