@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { connectAuth } from 'core';
+import { connect } from 'react-redux';
 
 class PrivateRoute extends Component {
   render() {
@@ -19,4 +19,4 @@ class PrivateRoute extends Component {
 const mapStateToProps = ({ wallet }) => ({
   wallet,
 });
-export default connectAuth(mapStateToProps, {})(PrivateRoute);
+export default connect(mapStateToProps, {})(PrivateRoute);

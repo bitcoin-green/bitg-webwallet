@@ -1,7 +1,3 @@
-const auth = {
-  user: {},
-};
-
 const wallet = {
   address: '',
   privateKey: '',
@@ -10,6 +6,5 @@ const wallet = {
 };
 
 export const initialState = {
-  auth,
   wallet,
 };
