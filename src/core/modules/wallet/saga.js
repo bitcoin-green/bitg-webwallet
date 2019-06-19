@@ -29,13 +29,12 @@ export function* asyncWalletBalanceRequest({ payload, resolve, reject }) {
   try {
     const response = yield call(ApiService,
       {
-        api: `https://www.coinexplorer.net/api/v1/BITG/address/balance?address=${address}`,
-        thirdParty: true,
+        api: `/rpc/getbalance?address=${address}`,
         method: 'GET',
         params: {},
       });
-    if (response.success) {
-      yield put(walletActionCreators.getBalanceSuccess({ balance: response.result[address] }));
+    if (response.result) {
+      yield put(walletActionCreators.getBalanceSuccess({ balance: response.data[address] }));
       resolve(response.result);
     } else {
       yield put(walletActionCreators.getBalanceFailure({ balance: 0 }));
@@ -51,13 +50,12 @@ export function* asyncWalletUtxoRequest({ payload, resolve, reject }) {
   try {
     const response = yield call(ApiService,
       {
-        api: `https://www.coinexplorer.net/api/v1/BITG/address/unspent?address=${address}`,
-        thirdParty: true,
+        api: `/rpc/getunspent?address=${address}`,
         method: 'GET',
         params: {},
       });
-    if (response.success) {
-      yield put(walletActionCreators.getUtxosSuccess({ utxos: response.result }));
+    if (response.result) {
+      yield put(walletActionCreators.getUtxosSuccess({ utxos: response.data }));
       resolve(response.result);
     } else {
       yield put(walletActionCreators.getUtxosFailure({ utxos: [] }));
