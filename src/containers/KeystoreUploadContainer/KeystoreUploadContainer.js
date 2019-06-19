@@ -4,7 +4,7 @@ import { compose } from 'recompose';
 import { bindActionCreators } from 'redux';
 import { connectWallet, walletActionCreators } from 'core';
 import { Row, Col, Button, Input, Layout } from 'antd';
-import logo from 'assets/img/logo.png';
+import logo from 'assets/img/logo.svg';
 import { promisify } from '../../utilities';
 import { importAddressFromPrivateKey } from '../../services/lib/bitcoingreen-lib';
 import { importKeyStore } from '../../services/lib/keystore-lib';

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, Button, Layout } from 'antd';
-import logo from 'assets/img/logo.png';
+import logo from 'assets/img/logo.svg';
 
 const { Content } = Layout;
 
